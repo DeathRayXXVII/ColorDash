@@ -6,17 +6,17 @@ public class ObjectMove : MonoBehaviour
 {
     public float speed;
     private float moveVelocity;
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody rigidbody;
 
     private void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rigidbody = GetComponent<Rigidbody>();
     }
     
 
     private void Update()
     {
-        rigidbody2D.velocity = new Vector2(-speed, rigidbody2D.velocity.y);
+        rigidbody.velocity = new Vector2(-speed, rigidbody.velocity.y);
         moveVelocity = speed;
     }
 }
