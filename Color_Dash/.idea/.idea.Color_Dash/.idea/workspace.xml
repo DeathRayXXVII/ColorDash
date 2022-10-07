@@ -10,6 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InstancerDataList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665007976520</updated>
       <workItem from="1665007983778" duration="9230000" />
-      <workItem from="1665102741999" duration="1448000" />
+      <workItem from="1665102741999" duration="3852000" />
     </task>
     <servers />
   </component>
