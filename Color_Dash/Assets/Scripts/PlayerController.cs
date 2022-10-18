@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
+        
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
