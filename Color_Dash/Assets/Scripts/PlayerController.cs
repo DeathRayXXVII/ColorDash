@@ -6,10 +6,8 @@ public class PlayerController : MonoBehaviour
     [Header("Player Stats")]
     public float jumpHeight;
     private Rigidbody rb;
-    public int curHP; //Health
-    public int maxHp; //Max health
-    //public HealthBar healthBar; //visual health
     private Vector2 direction;
+    
     
     
     [Header("Ground Check")]
@@ -33,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began)
+            if (touch.phase == TouchPhase.Ended)
             {
                 Jump();
             }
