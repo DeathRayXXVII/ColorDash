@@ -47,20 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1418332966876377627}
-        m_TargetAssemblyTypeName: Tools.MatchingGameScripts.Scripts.CoritineBehaviour,
-          Assembly-CSharp
-        m_MethodName: StartRepeatUntilFalse
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   startCountEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -85,7 +72,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 75d91b542351eed4f9673b4e17d953b3, type: 2}
+      - m_Target: {fileID: 11400000, guid: edb4616565eb1104cb00e355f85519ad, type: 2}
         m_TargetAssemblyTypeName: Instancers, Assembly-CSharp
         m_MethodName: CreateInstanceListRandomly
         m_Mode: 2
@@ -97,7 +84,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  canRun: 1
+  canRun: 0
   counterNum: {fileID: 0}
   seconds: 1.5
 --- !u!114 &976896358
