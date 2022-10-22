@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class NaveAgintBehaviour : MonoBehaviour
 {
     private NavMeshAgent agent;
+    //public vector3Data playerLoc;
     public vector3Data playerLoc;
 
 
