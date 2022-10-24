@@ -17,10 +17,23 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround; //What is the ground
     private float moveVelocity;
 
+    public bool IsGrounded
+    {
+        get => isGrounded;
+        set => isGrounded = value;
+    }
     private void Start()
     {
-        isGrounded = true;
+        IsGrounded = true;
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+           Jump();
+        }
     }
 
     private void FixedUpdate()
@@ -28,14 +41,14 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         
-        if (Input.touchCount > 0)
+        /*if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Ended)
             {
-                Jump();
+                
             }
-        }
+        }*/
     }
 
     public void Jump()
