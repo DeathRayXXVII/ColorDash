@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7543aa2b449b8b847bcd124ef59f4634, type: 3}
   m_Name: Object Data List
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4336638964415508516, guid: f9322ab5fc88f6043a1923fbe34d63a0, type: 3}
-  instancerDataList:
-  - {fileID: 11400000, guid: 75d91b542351eed4f9673b4e17d953b3, type: 2}
-  - {fileID: 11400000, guid: edb4616565eb1104cb00e355f85519ad, type: 2}
+  prefabList:
+  - {fileID: 1997298560774615739, guid: 8b69595546a3fb842bc75a5974d85968, type: 3}
+  - {fileID: 5827380517801804063, guid: a673b95f42c295547a4bc3b570e524b8, type: 3}
+  - {fileID: 4336638964415508516, guid: f9322ab5fc88f6043a1923fbe34d63a0, type: 3}
+  num: 1
+  num2: 0
