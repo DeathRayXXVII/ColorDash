@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && IsGrounded)
+        if (Input.GetMouseButton(0))
         {
            Jump();
         }
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
-        //rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-        rb.AddForce(Vector2.up * jumpHeight);
+        rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+        //rb.AddForce(Vector2.up * jumpHeight);
     }
 }
