@@ -7,12 +7,13 @@ public class ObjectMove : MonoBehaviour
     public float speed;
     private float moveVelocity;
     private Rigidbody rigidbody;
-    public Animation anim;
+    public Animator anim;
 
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         //anim = GetComponent<Animation>();
+        anim.SetBool("Spin",true);
     }
     
 

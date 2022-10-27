@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
+  anim: {fileID: 0}
 --- !u!114 &4336638964415508536
 MonoBehaviour:
   m_ObjectHideFlags: 0
