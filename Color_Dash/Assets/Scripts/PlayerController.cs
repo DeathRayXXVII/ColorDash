@@ -24,13 +24,13 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        IsGrounded = true;
+        //IsGrounded = true;
         rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))// && IsGrounded)
         {
            Jump();
         }
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+        IsGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         
         /*if (Input.touchCount > 0)

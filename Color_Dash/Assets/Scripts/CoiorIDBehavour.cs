@@ -4,7 +4,7 @@ public class CoiorIDBehavour : IDContanerBehavour
 {
     public ColorIDDataList colorIDDataListObj;
 
-    private void Awake()
+    public void Awake()
     {
         idObj = colorIDDataListObj.currentColor;
     }

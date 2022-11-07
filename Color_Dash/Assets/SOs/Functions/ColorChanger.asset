@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb58889894cd8046ae21070a5c52eef, type: 3}
-  m_Name: HighScore
+  m_Script: {fileID: 11500000, guid: 15561671018075a4ebbf32923be5e49d, type: 3}
+  m_Name: ColorChanger
   m_EditorClassIdentifier: 
-  value: 0
+  prefab: {fileID: 4385365696946951107, guid: 91812e73c4d73734ba9b7e59d1f4fffb, type: 3}
