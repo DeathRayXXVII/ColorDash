@@ -8,6 +8,7 @@ public class PoolingBehaviour : MonoBehaviour
     private WaitForSeconds wfsObj;
     public float seconds = 2f;
     private int i;
+    public vector3Data vector3Data;
    
     IEnumerator Start()
     {
@@ -15,7 +16,7 @@ public class PoolingBehaviour : MonoBehaviour
         while (true)
         {
             yield return wfsObj;
-            poolList[i].position = Vector3.zero;
+            poolList[i].position = vector3Data.value;
             poolList[i].gameObject.SetActive(true);
             i++;
             if (i > poolList.Count-1)
