@@ -60,7 +60,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5812409869770394835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9e021382a67fb64b9e9c1a3f99bd86a, type: 3}
   m_Name: 
@@ -107,7 +107,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   coin:
+    serializedVersion: 2
+    m_Bits: 0
+  player:
     serializedVersion: 2
     m_Bits: 0
 --- !u!82 &2700929947936547963
@@ -344,6 +350,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
   coin:
+    serializedVersion: 2
+    m_Bits: 0
+  player:
     serializedVersion: 2
     m_Bits: 0
