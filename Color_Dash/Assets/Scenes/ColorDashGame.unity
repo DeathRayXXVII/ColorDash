@@ -5310,7 +5310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Version:\t0.5.1"
+  m_text: "Version:\t0.5.2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6278,7 +6278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cb436f9d9d44b4ea6cc6216b58e734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 4.5
+  jumpHeight: 6
   doubleJump: 0
   numberOfJumps: 0
   isGrounded: 0
