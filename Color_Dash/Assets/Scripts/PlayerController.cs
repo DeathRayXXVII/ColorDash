@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
     private Rigidbody rb;
     private Vector2 direction;
+    public bool doubleJump;
+    public int numberOfJumps = 0;
     
     
     
@@ -34,31 +36,41 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         
-        
-        
     }
 
     private void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, whatIsGround);
-        if (Input.GetMouseButton(0) && isGrounded)
+                
+                if (Input.GetMouseButton(0) && isGrounded)
                 {
                     Jump();
                 }
-        
-        /*if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Ended)
-            {
-                
-            }
-        }*/
+                /*if (Input.touchCount > 0)
+                {
+                    Touch touch = Input.GetTouch(0);
+                    if (touch.phase == TouchPhase.Ended)
+                    {
+                        
+                    }
+                }*/
     }
 
     public void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+        if (isGrounded)
+        {
+            numberOfJumps = 0;
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            numberOfJumps++;
+        }
+        else
+        {
+            if (numberOfJumps != 1) return;
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            numberOfJumps++;
+        }
+            
         //rb.AddForce(Vector2.up * jumpHeight);
     }
 }
