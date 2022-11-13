@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class TriggerEvent : MonoBehaviour
 {
-    public UnityEvent triggerEnterEvent, triggerEvent;
+    public UnityEvent triggerEnterEvent, triggerColorEvent;
     public LayerMask coin;
     public LayerMask player;
 
@@ -14,11 +14,11 @@ public class TriggerEvent : MonoBehaviour
         {
             Debug.Log("You have entered");
         }
-        if (player == LayerMask.NameToLayer("Player"))
+        if (LayerMask.NameToLayer("Player") == player)
         {
             
         }
         triggerEnterEvent.Invoke();
-        triggerEvent.Invoke();
+        triggerColorEvent.Invoke();
     }
 }

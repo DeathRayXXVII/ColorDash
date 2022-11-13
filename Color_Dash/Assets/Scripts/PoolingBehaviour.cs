@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class PoolingBehaviour : MonoBehaviour
 {
+    public bool canRun;
     public List<Transform> poolList;
     private WaitForSeconds wfsObj;
     public float seconds = 2f;
     private int i;
     public vector3Data vector3Data;
    
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
     IEnumerator Start()
     {
         wfsObj = new WaitForSeconds(seconds);
-        while (true)
+        //canRun = false;
+        while (canRun)
         {
             yield return wfsObj;
             poolList[i].position = vector3Data.value;
