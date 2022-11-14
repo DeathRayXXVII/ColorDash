@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 825842632262630937}
   - component: {fileID: 5687233551629785075}
   - component: {fileID: 7647102016105892372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoubleSpikeTop
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -231,7 +231,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!65 &-4454499255271583443
 BoxCollider:
