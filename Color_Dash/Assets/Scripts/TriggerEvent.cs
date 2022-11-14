@@ -13,6 +13,7 @@ public class TriggerEvent : MonoBehaviour
         if (coin == LayerMask.NameToLayer("Coin"))
         {
             Debug.Log("You have entered");
+            
         }
         if (LayerMask.NameToLayer("Player") == player)
         {
