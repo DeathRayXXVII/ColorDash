@@ -1,24 +1,51 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class MonoEventsBehaviour : MonoBehaviour
 {
-    public UnityEvent startEvent, awakeEvent, disableEvent;
+    public float holdTime = 0.1f;
+    public UnityEvent onCallEvent, awakeEvent, startEvent, runEvent, disableEvent, destroyEvent, applicationQuitEvent;
 
-    //Awake happens before start
+    public void RunOnCall()
+    {
+        StartCoroutine(OnCall());
+    }
+    
+    private IEnumerator OnCall()
+    {
+        yield return new WaitForSeconds(holdTime);
+        onCallEvent.Invoke();
+    }
+    
     private void Awake()
     {
         awakeEvent.Invoke();
     }
-    //Activates when the game starts
-    private void Start()
+
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(holdTime);
         startEvent.Invoke();
     }
-    //Activates when a function becomes disabled
+
+    public void Run()
+    {
+        runEvent.Invoke();
+    }   
+
     private void OnDisable()
     {
         disableEvent.Invoke();
+    }
+
+    private void OnDestroy()
+    {
+        destroyEvent.Invoke();
+    }
+
+    private void OnApplicationQuit()
+    {
+        applicationQuitEvent.Invoke();
     }
 }

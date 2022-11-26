@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 direction;
     public bool doubleJump;
     public int numberOfJumps = 0;
+    public UnityEvent jumpEvent;
     
     
     
@@ -45,6 +47,8 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetMouseButton(0) && isGrounded)
                 {
                     Jump();
+                    jumpEvent.Invoke();
+                    
                 }
                 /*if (Input.touchCount > 0)
                 {
