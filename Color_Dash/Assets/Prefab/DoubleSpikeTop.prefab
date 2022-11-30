@@ -100,8 +100,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9994261, y: 1.7229004, z: 0.19999999}
-  m_Center: {x: -0.00028775123, y: -0.3614502, z: 0}
+  m_Size: {x: 1.1032565, y: 1.8845825, z: 0.19999999}
+  m_Center: {x: -0.052201662, y: -0.28060913, z: 0}
 --- !u!65 &9160788906303422788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -113,8 +113,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.92491007, y: 1.6550553, z: 0.2}
-  m_Center: {x: 0.038280316, y: -0.39537227, z: 0}
+  m_Size: {x: 1.0010512, y: 1.7169776, z: 0.2}
+  m_Center: {x: 0.00021030148, y: -0.36441112, z: 0}
 --- !u!114 &1620793713458708705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +139,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae50e2dffdb984a82d7b203745104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.1
+  onCallEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -154,10 +161,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  awakeEvent:
+  runEvent:
     m_PersistentCalls:
       m_Calls: []
   disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  applicationQuitEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &3503165692936635353
@@ -193,7 +206,7 @@ GameObject:
   m_Layer: 9
   m_Name: DoubleSpikeTop
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -386,6 +399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae50e2dffdb984a82d7b203745104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.1
+  onCallEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -401,10 +421,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  awakeEvent:
+  runEvent:
     m_PersistentCalls:
       m_Calls: []
   disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  applicationQuitEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1576631247185102894
@@ -535,6 +561,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae50e2dffdb984a82d7b203745104a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 0.1
+  onCallEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -550,10 +583,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  awakeEvent:
+  runEvent:
     m_PersistentCalls:
       m_Calls: []
   disableEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  applicationQuitEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &6791226902072439606

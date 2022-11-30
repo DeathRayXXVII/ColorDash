@@ -21,4 +21,33 @@ public class vector3Data : ScriptableObject
     {
         obj.localPosition = value;
     }
+
+    public void UpdateXValue(float num)
+    {
+        value.x += num;
+    }
+    
+    public void UpdateYValue(float num)
+    {
+        value.x += num;
+    }
+    
+    public void UpdateZValue(float num)
+    {
+        value.x += num;
+    }
+    public void SetXValue(float num)
+    {
+        value.x = num;
+    }
+    
+    public void SetYValue(float num)
+    {
+        value.x = num;
+    }
+    
+    public void SetZValue(float num)
+    {
+        value.x = num;
+    }
 }
