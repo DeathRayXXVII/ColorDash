@@ -28643,7 +28643,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   seconds: 7
-  vector3Data: {fileID: 11400000, guid: 9b279444d2c124549adffd644af83e8c, type: 2}
+  vector3Data: {fileID: 11400000, guid: fa60320a5305c0649a85b0143bb93a4c, type: 2}
 --- !u!1 &2064651320
 GameObject:
   m_ObjectHideFlags: 0

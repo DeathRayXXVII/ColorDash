@@ -27,7 +27,7 @@ public class PoolingBehaviour : MonoBehaviour
         {
             yield return wfsObj;
             poolEvent.Invoke();
-            //poolList[i].position = vector3Data.value;
+            poolList[i].position = vector3Data.value;
             poolList[i].gameObject.SetActive(true);
             i++;
             if (i > poolList.Count-1)
