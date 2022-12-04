@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 1997298560774615737}
   - component: {fileID: 1997298560774615738}
   - component: {fileID: 1997298560774615742}
+  - component: {fileID: 3502405791660694464}
   - component: {fileID: 1997298560774615743}
   - component: {fileID: 1997298560774615736}
   - component: {fileID: 1997298560774615731}
@@ -141,7 +142,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2d87a1808dc92b44eb97ed7f007d7712, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.64710045, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
@@ -163,10 +164,23 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &3502405791660694464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997298560774615739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7513895, y: 1.1846633, z: 0.2}
+  m_Center: {x: -0.2101345, y: 0.09233165, z: 0}
 --- !u!65 &1997298560774615743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,8 +192,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6718605, y: 1.1316438, z: 0.2}
+  m_Center: {x: -0.17036998, y: 0.065821886, z: 0}
 --- !u!114 &1997298560774615736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d00fa8dad371a14cb57ee3afc3eb699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 4
   anim: {fileID: 0}
 --- !u!114 &1997298560774615731
 MonoBehaviour:
